@@ -1,0 +1,8 @@
+﻿  BT2.cpp
+  PhanSo.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT2\PhanSo.cpp(45,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT2\PhanSo.cpp(62,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT2\PhanSo.cpp(79,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT2\PhanSo.cpp(97,29): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  BT2.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\Debug\BT2.exe

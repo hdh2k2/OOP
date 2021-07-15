@@ -1,0 +1,13 @@
+﻿  Bai6.cpp
+  Bo.cpp
+  ChuTheoTiengNoi.cpp
+  Cuu.cpp
+  De.cpp
+  GiaSuc.cpp
+  NongTrai.cpp
+D:\STUDY\IN SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai6\NongTrai.cpp(169,22): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\IN SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai6\NongTrai.cpp(192,20): warning C4018: '<': signed/unsigned mismatch
+  TaoChuChay.cpp
+  TiengKeu.cpp
+  Generating Code...
+  Bai6.vcxproj -> D:\STUDY\IN SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Debug\Bai6.exe

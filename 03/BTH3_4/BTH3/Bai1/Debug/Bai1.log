@@ -1,0 +1,7 @@
+﻿  Bai1.cpp
+  DaGiac.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\3\BTH3\BTH3\Bai1\DaGiac.cpp(31,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\3\BTH3\BTH3\Bai1\DaGiac.cpp(32,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Point.cpp
+  Generating Code...
+  Bai1.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\3\BTH3\BTH3\Debug\Bai1.exe

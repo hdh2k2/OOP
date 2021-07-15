@@ -1,0 +1,12 @@
+﻿  Bai1.cpp
+  NhanVien.cpp
+  NhanVienSanXuat.cpp
+  NhanVienVanPhong.cpp
+  QuanLiNhanVien.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai1\QuanLiNhanVien.cpp(58,20): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai1\QuanLiNhanVien.cpp(69,20): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai1\QuanLiNhanVien.cpp(76,20): warning C4018: '<': signed/unsigned mismatch
+  Time.cpp
+  Generating Code...
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Bai1\Time.h(34): warning C4715: 'Time::SoNgayCuaThang': not all control paths return a value
+  Bai1.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\5\20521317_HoangDinhHieu_Buoi5\BTH7\Debug\Bai1.exe

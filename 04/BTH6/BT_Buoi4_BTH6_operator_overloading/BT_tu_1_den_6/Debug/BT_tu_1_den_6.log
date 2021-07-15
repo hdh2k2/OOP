@@ -1,0 +1,6 @@
+﻿  BT_tu_1_den_6.cpp
+  CDate.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT_tu_1_den_6\CDate.cpp(176,12): error C2676: binary '++': 'CDate' does not define this operator or a conversion to a type acceptable to the predefined operator
+  CString.cpp
+  QuanLi.cpp
+  Generating Code...

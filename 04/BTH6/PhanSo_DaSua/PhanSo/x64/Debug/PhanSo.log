@@ -1,0 +1,8 @@
+﻿  PhanSo.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\PhanSo\PhanSo\PhanSo.cpp(45,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\PhanSo\PhanSo\PhanSo.cpp(62,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\PhanSo\PhanSo\PhanSo.cpp(79,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\PhanSo\PhanSo\PhanSo.cpp(97,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Source.cpp
+  Generating Code...
+  PhanSo.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\PhanSo\x64\Debug\PhanSo.exe

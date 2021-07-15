@@ -1,0 +1,5 @@
+﻿  BT5.cpp
+  CDate.cpp
+  Generating Code...
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT5\CDate.h(28): warning C4715: 'CDate::SoNgayCuaThang': not all control paths return a value
+  BT5.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\x64\Debug\BT5.exe

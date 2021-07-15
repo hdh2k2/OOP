@@ -1,0 +1,4 @@
+﻿  CTimeSpan.cpp
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT3_va_BT4\CTimeSpan.cpp(136): warning C4715: 'CTimeSpan::operator+': not all control paths return a value
+D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\BT3_va_BT4\CTimeSpan.cpp(161): warning C4715: 'CTimeSpan::operator-': not all control paths return a value
+  BT3_va_BT4.vcxproj -> D:\STUDY\Semester2\Object Oriented Programming\Courses\STUDY\Pracise\4\20521317_HoangDinhHieu_Buoi4\BT_Buoi4_BTH6_operator_overloading\Debug\BT3_va_BT4.exe
