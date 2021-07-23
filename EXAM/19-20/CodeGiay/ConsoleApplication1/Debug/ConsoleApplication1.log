@@ -1,0 +1,5 @@
+﻿  ConsoleApplication1.cpp
+D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\19-20\CodeGiay\ConsoleApplication1\ConsoleApplication1.cpp(193,20): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\19-20\CodeGiay\ConsoleApplication1\ConsoleApplication1.cpp(200,20): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\19-20\CodeGiay\ConsoleApplication1\ConsoleApplication1.cpp(213,20): warning C4018: '<': signed/unsigned mismatch
+  ConsoleApplication1.vcxproj -> D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\19-20\CodeGiay\ConsoleApplication1\Debug\ConsoleApplication1.exe
