@@ -43,7 +43,8 @@ void Nguoi::XuatThongTin() {
 class SoHong {
 protected:
 	wstring SoGiayChungNhan;
-	Nguoi NguoiSoHuuQuyenSuDungDat;
+	int SoNguoiSoHuuQuyenSuDungDat;
+	Nguoi* NguoiSoHuuQuyenSuDungDat;
 	int SoThuaDat;
 	int SoToBanDo;
 	wstring DiaChiThuaDat;
@@ -65,8 +66,13 @@ void SoHong::LuuThongTinSoHong() {
 	wcout << L"Nhập thông tin sổ hồng !!! \n";
 	wcout << L"Nhập số giấy chứng nhận: ";
 	getline(wcin, this->SoGiayChungNhan);
-	wcout << L"Nhập thông tin chủ sở hữu \n";
-	NguoiSoHuuQuyenSuDungDat.NhapThongTin();
+	wcout << L"Nhập số lượng chủ sở hữu quyền sử dụng đất: ";
+	wcin >> this->SoNguoiSoHuuQuyenSuDungDat;
+	for (int i = 0; i < SoNguoiSoHuuQuyenSuDungDat; i++) {
+		wcout << L"Nhập thông tin chủ sở hữu thứ " << i + 1 << L": \n";
+		NguoiSoHuuQuyenSuDungDat[i].NhapThongTin();
+	}
+
 	wcout << L"Nhập số thửa đất: "; 
 	wcin >> this->SoThuaDat;
 	wcout << L"Nhập số tờ bản đồ: ";
@@ -86,8 +92,12 @@ void SoHong::LuuThongTinSoHong() {
 void SoHong::XuatThongTinSoHong() {
 	wcout << L"\nThông tin sổ hồng ";
 	wcout << L"\nSố giấy chứng nhận: " << this->SoGiayChungNhan;
-	wcout << L"\nThông tin người sở hữu: ";
-	NguoiSoHuuQuyenSuDungDat.XuatThongTin();
+
+	for (int i = 0; i < SoNguoiSoHuuQuyenSuDungDat; i++) {
+		wcout << L"\nThông tin người sở hữu thứ " << i + 1 << L": \n";
+		NguoiSoHuuQuyenSuDungDat[i].XuatThongTin();
+	}
+
 	wcout << L"\nSố thửa đất: " << this->SoThuaDat;
 }
 
