@@ -139,22 +139,12 @@ double SoHong_NN::TienThuePhaiDong() {
 class SoHong_PNN :public SoHong {
 public:
 	wstring getter_LoaiSoHong();
-	void LuuThongTinSoHong(); // Nạp chồng hàm để hạn chế việc tiêu tốn tài nguyên dữ liệu, ...
-	void XuatThongTinSoHong(); // Nạp chồng hàm để hạn chế việc tiêu tốn tài nguyên dữ liệu, ...
 	double TienThuePhaiDong(); // Nạp chòng hàm để tránh lỗi mơ hồ đến từ lớp trừu tượng
 };
 
 wstring SoHong_PNN::getter_LoaiSoHong() {
 	this->LoaiSoHong = L"Sổ hồng đất phi nông nghiệp";
 	return this->LoaiSoHong;
-}
-
-void SoHong_PNN::LuuThongTinSoHong() {
-	SoHong::LuuThongTinSoHong();
-}
-
-void SoHong_PNN::XuatThongTinSoHong() {
-	SoHong::XuatThongTinSoHong();
 }
 
 double SoHong_PNN::TienThuePhaiDong() {
