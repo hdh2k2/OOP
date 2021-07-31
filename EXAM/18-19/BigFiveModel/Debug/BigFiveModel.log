@@ -1,2 +1,4 @@
 ﻿  BigFiveModel.cpp
+D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\18-19\BigFiveModel\BigFiveModel.cpp(288,20): warning C4018: '<': signed/unsigned mismatch
+D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\18-19\BigFiveModel\BigFiveModel.cpp(301,20): warning C4018: '<': signed/unsigned mismatch
   BigFiveModel.vcxproj -> D:\STUDY\SCHOOL\Semester2\Object Oriented Programming\Courses\STUDY\For_github\EXAM\18-19\BigFiveModel\Debug\BigFiveModel.exe
