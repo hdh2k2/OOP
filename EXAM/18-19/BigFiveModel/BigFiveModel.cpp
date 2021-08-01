@@ -30,8 +30,8 @@ using namespace std;
 
 class Personality {
 protected:
-	wstring _yeu_to;
-	double _chi_so;
+	wstring _yeuto;
+	double _chiso;
 public:
 	virtual double getterChiSo(); // Dùng phương thức ảo để thực hiện việc nạp chồng hàm (giúp thể hiện tính đa hình).
 	virtual void nhapThongTin() = 0; // Dùng phương thức thuần ảo để biến lớp cơ sở thành 1 lớp trừu tượng để thực hiện tính trừu tượng.
@@ -39,27 +39,27 @@ public:
 };
 
 double Personality::getterChiSo() {
-	return this->_chi_so;
+	return this->_chiso;
 }
 
 void Personality::xuatThongTin() {
-	wcout << this->_yeu_to << this->_chi_so;
+	wcout << this->_yeuto << this->_chiso;
 }
 
 class Openness :public Personality {
 public:
 	Openness();
-	void setterChiSo(double _chi_so);
+	void setterChiSo(double _chiso);
 	void nhapThongTin();
 	void xuatThongTin();
 };
 
 Openness::Openness() {
-	this->_yeu_to = L"O";
+	this->_yeuto = L"O";
 }
 
-void Openness::setterChiSo(double _chi_so) {
-	this->_chi_so = _chi_so;
+void Openness::setterChiSo(double _chiso) {
+	this->_chiso = _chiso;
 }
 
 void Openness::nhapThongTin() {
@@ -71,12 +71,12 @@ void Openness::nhapThongTin() {
 
 void Openness::xuatThongTin() {
 	Personality::xuatThongTin();
-	if (this->_chi_so >= 70) {
+	if (this->_chiso >= 70) {
 		wcout << L": Sẵn sàng trải nghiệm (O) Người có điểm cao ở yếu tố này thường là người thích những ý tưởng mới, ";
 		wcout << L"\n\t thích hiểu biết nhiều lĩnh vực nhưng đồng thời cũng thích tự do, không thích bị ràng buộc, ...";
 	}
 
-	else if (this->_chi_so <= 30) {
+	else if (this->_chiso <= 30) {
 		wcout << L": Sẵn sàng trải nghiệm (O) Người có điểm thấp ở yếu tố này thường khá bảo thủ, khó tiếp nhận những ý tưởng mới, lạ.";
 		wcout << L"\n\t Họ thích sự ổn định, quen thuộc và thực tế. ";
 	}
@@ -88,17 +88,17 @@ void Openness::xuatThongTin() {
 class Conscientiousness :public Personality {
 public:
 	Conscientiousness();
-	void setterChiSo(double _chi_so);
+	void setterChiSo(double _chiso);
 	void nhapThongTin();
 	void xuatThongTin();
 };
 
 Conscientiousness::Conscientiousness() {
-	this->_yeu_to = L"C";
+	this->_yeuto = L"C";
 }
 
-void Conscientiousness::setterChiSo(double _chi_so) {
-	this->_chi_so = _chi_so;
+void Conscientiousness::setterChiSo(double _chiso) {
+	this->_chiso = _chiso;
 }
 
 
@@ -111,12 +111,12 @@ void Conscientiousness::nhapThongTin() {
 
 void Conscientiousness::xuatThongTin() {
 	Personality::xuatThongTin();
-	if (this->_chi_so >= 70) {
+	if (this->_chiso >= 70) {
 		wcout << L": Tự chủ tận tâm (C) Người có điểm cao ở yếu tố này thường là người chăm chỉ, có khả năng chịu áp lực tốt.";
 		wcout << L"\n\t Họ thường là người gắn bó, trung thành với tổ chức.";
 	}
 
-	else if (this->_chi_so <= 30) {
+	else if (this->_chiso <= 30) {
 		wcout << L": Tự chủ tận tâm (C) Người có điểm thấp ở yếu tố này thường dễ bỏ cuộc, khả năng chịu áp lực, tuân thủ kỷ luật";
 		wcout << L"\n\t của tổ chức kém.";
 	}
@@ -129,17 +129,17 @@ void Conscientiousness::xuatThongTin() {
 class Extraversion :public Personality {
 public:
 	Extraversion();
-	void setterChiSo(double _chi_so);
+	void setterChiSo(double _chiso);
 	void nhapThongTin();
 	void xuatThongTin();
 };
 
 Extraversion::Extraversion() {
-	this->_yeu_to = L"E";
+	this->_yeuto = L"E";
 }
 
-void Extraversion::setterChiSo(double _chi_so) {
-	this->_chi_so = _chi_so;
+void Extraversion::setterChiSo(double _chiso) {
+	this->_chiso = _chiso;
 }
 
 
@@ -152,12 +152,12 @@ void Extraversion::nhapThongTin() {
 
 void Extraversion::xuatThongTin() {
 	Personality::xuatThongTin();
-	if (this->_chi_so >= 70) {
+	if (this->_chiso >= 70) {
 		wcout << L": Hướng ngoại (E) Người có điểm cao ở yếu tố này thường là người nhiệt tình, năng động,";
 		wcout << L"\n\t giao tiếp tốt, thích thể hiện bản thân.";
 	}
 
-	else if (this->_chi_so <= 30) {
+	else if (this->_chiso <= 30) {
 		wcout << L": Hướng ngoại (E) Người có điểm thấp ở yếu tố này thường ngại giao tiếp, không thích sự nổi bậc,";
 		wcout << L"\n\t thích được làm việc độc lập. ";
 	}
@@ -170,17 +170,17 @@ void Extraversion::xuatThongTin() {
 class Agreeableness :public Personality {
 public:
 	Agreeableness();
-	void setterChiSo(double _chi_so);
+	void setterChiSo(double _chiso);
 	void nhapThongTin();
 	void xuatThongTin();
 };
 
 Agreeableness::Agreeableness() {
-	this->_yeu_to = L"A";
+	this->_yeuto = L"A";
 }
 
-void Agreeableness::setterChiSo(double _chi_so) {
-	this->_chi_so = _chi_so;
+void Agreeableness::setterChiSo(double _chiso) {
+	this->_chiso = _chiso;
 }
 
 
@@ -193,12 +193,12 @@ void Agreeableness::nhapThongTin() {
 
 void Agreeableness::xuatThongTin() {
 	Personality::xuatThongTin();
-	if (this->_chi_so >= 70) {
+	if (this->_chiso >= 70) {
 		wcout << L": Hòa đồng dễ chịu (A) Người có điểm cao ở yếu tố này thường thân thiện, cởi mở, đồng cảm với mọi người";
 		wcout << L"\n\t nhưng nhiều khi 'thiếu chính kiến'.";
 	}
 
-	else if (this->_chi_so <= 30) {
+	else if (this->_chiso <= 30) {
 		wcout << L": Hòa đồng dễ chịu (A) Người có điểm thấp ở yếu tố này thường đặt lợi ích của bản thân lên trên, ít đồng cảm,";
 		wcout << L"\n\t chia sẽ với đồng nghiệp, có tính cạnh tranh cao.";
 	}
@@ -211,17 +211,17 @@ void Agreeableness::xuatThongTin() {
 class Neuroticism :public Personality {
 public:
 	Neuroticism();
-	void setterChiSo(double _chi_so);
+	void setterChiSo(double _chiso);
 	void nhapThongTin();
 	void xuatThongTin();
 };
 
 Neuroticism::Neuroticism() {
-	this->_yeu_to = L"N";
+	this->_yeuto = L"N";
 }
 
-void Neuroticism::setterChiSo(double _chi_so) {
-	this->_chi_so = _chi_so;
+void Neuroticism::setterChiSo(double _chiso) {
+	this->_chiso = _chiso;
 }
 
 
@@ -234,12 +234,12 @@ void Neuroticism::nhapThongTin() {
 
 void Neuroticism::xuatThongTin() {
 	Personality::xuatThongTin();
-	if (this->_chi_so >= 70) {
+	if (this->_chiso >= 70) {
 		wcout << L": Bất ổn cảm xúc (N) Người có điểm cao ở yếu tố này thường có cảm xúc tiêu cực như: lo lắng, bực bội,";
 		wcout << L"\n\t tự ti, yếu đuối và khả năng chịu áp lực kém.";
 	}
 
-	else if (this->_chi_so <= 30) {
+	else if (this->_chiso <= 30) {
 		wcout << L": Bất ổn cảm xúc (N) Người có điểm thấp ở yếu tố này thường kiểm soát được cảm xúc, ứng phó với căng thẳng tốt,";
 		wcout << L"\n\t ít bị bên ngoài ảnh hưởng đến tâm trạng của bản thân.";
 	}
@@ -250,7 +250,7 @@ void Neuroticism::xuatThongTin() {
 
 class QuanLiCamXucCuaTungNguoi {
 private:
-	vector<Personality*> _quan_li; // Dùng vector đối tượng con trỏ để hạn chế tối thiểu việc tiêu hao bộ nhớ trên bộ dữ liệu.
+	vector<Personality*> _quanli; // Dùng vector đối tượng con trỏ để hạn chế tối thiểu việc tiêu hao bộ nhớ trên bộ dữ liệu.
 								 // Ngoài ra việc dùng quanli Personality để thực hiện quá trình liên kết động cho bộ dữ liệu.
 
 public:
@@ -265,48 +265,48 @@ void QuanLiCamXucCuaTungNguoi::nhapThongTinCamXuc() {
 	wcout << L"\n\n\t === Nhập kết quả đánh giá tâm lý === \n";
 	personality = new Openness;
 	personality->nhapThongTin();
-	_quan_li.push_back(personality);
+	_quanli.push_back(personality);
 
 	personality = new Conscientiousness;
 	personality->nhapThongTin();
-	_quan_li.push_back(personality);
+	_quanli.push_back(personality);
 
 	personality = new Extraversion;
 	personality->nhapThongTin();
-	_quan_li.push_back(personality);
+	_quanli.push_back(personality);
 
 	personality = new Agreeableness;
 	personality->nhapThongTin();
-	_quan_li.push_back(personality);
+	_quanli.push_back(personality);
 
 	personality = new Neuroticism;
 	personality->nhapThongTin();
-	_quan_li.push_back(personality);
+	_quanli.push_back(personality);
 }
 
 void QuanLiCamXucCuaTungNguoi::xuatThongTinCamXuc() {
-	for (int i = 0; i < _quan_li.size() ; i++) {
+	for (int i = 0; i < _quanli.size() ; i++) {
 		wcout << L"\n\t ";
-		_quan_li[i]->xuatThongTin();
+		_quanli[i]->xuatThongTin();
 	}
 }
 
 bool QuanLiCamXucCuaTungNguoi::nguoiCoNguyCoKhienNhaTuyenDungCanLuuY() {
-	if (_quan_li[1]->getterChiSo() <= 30 || _quan_li[4]->getterChiSo() >= 70 || (_quan_li[4]->getterChiSo() >= 70 && _quan_li[2]->getterChiSo() <= 30))
+	if (_quanli[1]->getterChiSo() <= 30 || _quanli[4]->getterChiSo() >= 70 || (_quanli[4]->getterChiSo() >= 70 && _quanli[2]->getterChiSo() <= 30))
 		return true;
 	return false;
 }
 
 QuanLiCamXucCuaTungNguoi::~QuanLiCamXucCuaTungNguoi() {
-	for (int i = 0; i < _quan_li.size(); i++)
-		delete _quan_li[i];
+	for (int i = 0; i < _quanli.size(); i++)
+		delete _quanli[i];
 }
 
 
 class DSNguoi {
 private:
-	int _so_luong;
-	QuanLiCamXucCuaTungNguoi _quan_li_cam_xuc[HHD]; // Dùng mảng động để giảm thiểu thời gian làm việc trên giấy cũng như không cần thêm hàm hủy
+	int _soluong;
+	QuanLiCamXucCuaTungNguoi _quanlicamxuc[HHD]; // Dùng mảng động để giảm thiểu thời gian làm việc trên giấy cũng như không cần thêm hàm hủy
 public:
 	void nhapKetQuaPhanTichTamLy();
 	void xuatKetQuaPhanTichTamLy();
@@ -318,38 +318,38 @@ void DSNguoi::nhapKetQuaPhanTichTamLy() {
 	_setmode(_fileno(stdin), _O_U16TEXT);
 	_setmode(_fileno(stdout), _O_U16TEXT);
 	wcout << L"\n\n\t Mời bạn nhập số người muốn phân tích tâm lý: ";
-	wcin >> _so_luong;
-	_quan_li_cam_xuc[_so_luong];
-	for (int i = 0; i < _so_luong; i++) {
+	wcin >> _soluong;
+	_quanlicamxuc[_soluong];
+	for (int i = 0; i < _soluong; i++) {
 		wcout << L"\n\t Mời bạn nhập kết quả phân tích tâm lý của người thứ " << i + 1 << L": ";
-		_quan_li_cam_xuc[i].nhapThongTinCamXuc();
+		_quanlicamxuc[i].nhapThongTinCamXuc();
 	}
 }
 
 void DSNguoi::xuatKetQuaPhanTichTamLy() {
 	wcout << L"\n\n\t === Thông tin kết quả phân tích tâm lý === \n";
-	for (int i = 0; i < _so_luong; i++) {
+	for (int i = 0; i < _soluong; i++) {
 		wcout << L"\n\t Thông tin kết quả phân tích tâm lý của người thứ " << i + 1 << L": ";
-		_quan_li_cam_xuc[i].xuatThongTinCamXuc();
+		_quanlicamxuc[i].xuatThongTinCamXuc();
 	}
 }
 
 void DSNguoi::xuatThongTinKetQuaPhanTichTamLyCuaNguoiDuocChon() {
 	wcout << L"\n\n\t Bạn muốn xem kết quả phân tích tâm lý của người thứ mấy trong danh sách ?: ";
-	int _thu_tu;
-	wcin >> _thu_tu;
-	wcout << L"\n\t Thông tin kết quả phân tích tâm lý của người thứ " << _thu_tu + 1 << L": ";
-	_quan_li_cam_xuc[_thu_tu].xuatThongTinCamXuc();
+	int _thutu;
+	wcin >> _thutu;
+	wcout << L"\n\t Thông tin kết quả phân tích tâm lý của người thứ " << _thutu + 1 << L": ";
+	_quanlicamxuc[_thutu].xuatThongTinCamXuc();
 }
 
 void DSNguoi::xuatDanhSachNhungNguoiCoNguyCoCaoCanLuuY() {
 	_setmode(_fileno(stdin), _O_U16TEXT);
 	_setmode(_fileno(stdout), _O_U16TEXT);
 	wcout << L"\n\n\t === Danh sách những người có nguy cơ cao mà các nhà tuyển dụng cần lưu ý ===\n";
-	for (int i = 0; i < _so_luong; i++) {
-		if (_quan_li_cam_xuc[i].nguoiCoNguyCoKhienNhaTuyenDungCanLuuY()) {
+	for (int i = 0; i < _soluong; i++) {
+		if (_quanlicamxuc[i].nguoiCoNguyCoKhienNhaTuyenDungCanLuuY()) {
 			wcout << L"\n\n\t Người thứ " << i + 1 << ": ";
-			_quan_li_cam_xuc[i].xuatThongTinCamXuc();
+			_quanlicamxuc[i].xuatThongTinCamXuc();
 		}
 	}
 }
