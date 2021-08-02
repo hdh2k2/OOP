@@ -1,5 +1,3 @@
-# **Object-oriented programming**
-
 ## **Topics Covered**
 
         ───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
@@ -26,6 +24,7 @@
 ## **Learn more** 
 
 - Basic theory of oop
+    - [Class diagram](https://en.wikipedia.org/wiki/Class_diagram)
     - [Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming))
     - [Abstraction](https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming))  [2](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
     - [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming))
