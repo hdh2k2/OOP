@@ -544,7 +544,7 @@
     
     D. Chương trình báo lỗi
 
-30. Cho đoạn chương trình dưới đây
+30. Cho đo*ạ*n chương trình dưới đây
     ```C++
     class A{
     public:
