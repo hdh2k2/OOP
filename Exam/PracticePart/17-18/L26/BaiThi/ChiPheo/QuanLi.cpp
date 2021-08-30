@@ -5,7 +5,8 @@ QuanLi::QuanLi() {
 }
 
 QuanLi::~QuanLi() {
-
+	for (int i = 0; i < _soluong; i++)
+		delete _quanli[i];
 }
 
 void QuanLi::solve() {
