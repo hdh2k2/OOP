@@ -5,6 +5,7 @@ class ThanhVienBiAn:public NhanVat{
 public:
 	ThanhVienBiAn();
 	~ThanhVienBiAn();
+
 	void khoiTaoLuongMauVaSucManh();
 };
 

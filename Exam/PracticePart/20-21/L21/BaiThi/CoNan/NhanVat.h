@@ -1,9 +1,5 @@
 #pragma once
-#include "VuAn.h"
 #include <iostream>
-#include <string>
-
-using namespace std;
 
 enum PhanLoai {
 	isConan, isGin, isVodka, isKorn, isThanhVienBiAn, isNguoiMatQua, ChuaXacDinh
@@ -23,8 +19,8 @@ public:
 	int getterLuongMau();
 	int getterSucManh();
 	PhanLoai _phanloai_NhanVat();
-
 	int getterChiSoXuatHien();
+
 	void setterChiSoXuatHien(int _chisoxuathien);
 
 	virtual void khoiTaoLuongMauVaSucManh();

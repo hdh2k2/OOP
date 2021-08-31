@@ -15,7 +15,6 @@ private:
 	CoNan _conan;
 
 	vector<NhanVat*> _quanlinhanvat;
-
 	vector<VuAn*> _quanlivuan;
 
 	int _soluongngoisaothanki;

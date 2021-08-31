@@ -1,5 +1,7 @@
 #include "NhanVat.h"
 
+using namespace std;
+
 NhanVat::NhanVat() {
 	this->_luongmau = 0;
 	this->_sucmanh = 0;

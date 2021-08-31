@@ -5,6 +5,7 @@ class Korn:public NhanVat{
 public:
 	Korn();
 	~Korn();
+
 	void khoiTaoLuongMauVaSucManh();
 };
 

@@ -5,7 +5,9 @@ private:
 public:
 	VuAn();
 	~VuAn();
+
 	int getterDoKho();
+
 	void khoiTaoDoKho();
 };
 

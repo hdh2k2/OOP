@@ -5,6 +5,7 @@ class NguoiMatQua:public NhanVat{
 public:
 	NguoiMatQua();
 	~NguoiMatQua();
+
 	void khoiTaoLuongMauVaSucManh();
 };
 
