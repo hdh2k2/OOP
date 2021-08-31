@@ -79,13 +79,11 @@ void QuanLi::run() {
 		}
 	}
 
-	int _luongmau = this->_conan.getterLuongMau();
-	int _sucmanh = this->_conan.getterSucManh();
+	int _luongmau = this->_conan.getterLuongMau(); // Đặc tả lượng máu khi Conan chạm tráng với các nhân vật khác
+	int _sucmanh = this->_conan.getterSucManh(); // Đặc tả lượng sức mạnh khi Conan chạm tráng với các nhân vật khác
 
 	int _soluongvuan_DaVuotQua = 0;
-	bool _hetmau = false;
 	int step = 1;
-
 	int _vitri_NhanVat = 0;
 
 	for (int i = 0; i < _soluongmanchoi; i++) {
@@ -112,10 +110,8 @@ void QuanLi::run() {
 					_sucmanh = this->_conan.getterSucManh();
 				}
 
-				else {
-					_hetmau = true;
-					break;
-				}
+				else
+					break;  // Hết máu
 			}
 			
 		}
@@ -137,10 +133,8 @@ void QuanLi::run() {
 						_sucmanh = this->_conan.getterSucManh();
 					}
 
-					else {
-						_hetmau = true;
-						break;
-					}
+					else
+						break; // Hết máu
 				}
 			}
 		}
@@ -159,10 +153,8 @@ void QuanLi::run() {
 						_sucmanh = this->_conan.getterSucManh();
 					}
 
-					else {
-						_hetmau = true;
-						break;
-					}
+					else 
+						break; // Hết máu
 				}
 			}
 		}
@@ -182,10 +174,8 @@ void QuanLi::run() {
 						_sucmanh = this->_conan.getterSucManh();
 					}
 
-					else {
-						_hetmau = true;
-						break;
-					}
+					else 
+						break; // Hết máu
 				}
 			}
 
@@ -205,8 +195,10 @@ void QuanLi::run() {
 
 		step++;
 	}
-		
-	cout << ((_sucmanh + _luongmau) >= _quanlinhanvat[3]->getterLuongMau() ? "CHIEN THANG" : "THAT BAI");
+	
+	// _quanlinhanvat[4] là bot cuối, hay nói cách khác chính là tên người mặt quạ. 
+
+	cout << ((_sucmanh + _luongmau) >= _quanlinhanvat[4]->getterLuongMau() ? "CHIEN THANG" : "THAT BAI"); 
 
 	
 }
