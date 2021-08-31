@@ -28,37 +28,4 @@ public:
 	void setterChiSoXuatHien(int _chisoxuathien);
 
 	virtual void khoiTaoLuongMauVaSucManh();
-
-
-
-	void Xuat() {
-		switch (this->_loainhanvat)
-		{
-		case isConan: {
-			cout << "Conan";
-			break;
-		}
-		case isGin: {
-			cout << "Gin";
-			break;
-		}
-		case isVodka: {
-			cout << "Vodka";
-			break;
-		}
-		case isKorn: {
-			cout << "Korn";
-			break;
-		}
-		case isThanhVienBiAn: {
-			cout << "Thanh vien bi an";
-			break;
-		}
-		case isNguoiMatQua: {
-			cout << "Nguoi Mat Quy";
-			break;
-		}
-		}
-		cout << " | Mau: " << this->_luongmau << " | " << this->_sucmanh;
-	}
 };
